@@ -71,13 +71,15 @@ After entering the note details click the save icon to save it to the database. 
 Deleting a Note:
 If you want to delete a note click the red trash icon to permanently delete note from database and remove it from the saved notes.
 
+To view live deployed application click [Here!](https://eric-notes-app-0e954832a62b.herokuapp.com/)
+
 ## Contributing
 
 None
 
 ## Tests
 
-Replace https://github.com/ericrisher/notetaker with the actual URL of the GitHub repository.
+None
 
 ## Questions
 
