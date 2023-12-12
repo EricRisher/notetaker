@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid"); // Import uuid for unique id generation
-const sequelize = require('./connection');
+const sequelize = require("./connection"); // Import Sequelize connection
 
 // Read existing notes from the file and parse them
 const existingNotes = fs.readFileSync(
@@ -99,19 +99,19 @@ const deleteNote = (id) => {
   );
 };
 
-app.get("/api/notes/:id", (req, res) => {
-    const result = findById(req.params.id, notes);
-    if (result) {
-        res.json(result);
-    } else {
-        res.send(404);
-    }
-});
-
 // Route to handle the deletion of a note by ID
 app.delete("/api/notes/:id", (req, res) => {
   deleteNote(req.params.id);
   res.json(true); // Respond with a JSON indicating success
+});
+
+app.get("/api/notes/:id", (req, res) => {
+  const result = findById(req.params.id, notes);
+  if (result) {
+    res.json(result);
+  } else {
+    res.send(404);
+  }
 });
 
 // Start the server and listen on the defined port
