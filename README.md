@@ -51,6 +51,7 @@
 
 ## Usage
 
+![Alt text](<example.png>)
 Homepage:
 The homepage should provide an overview or menu. Navigate through the application using links or buttons.
 
