@@ -3,6 +3,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid"); // Import uuid for unique id generation
+const sequelize = require('./connection');
 
 // Read existing notes from the file and parse them
 const existingNotes = fs.readFileSync(
@@ -12,7 +13,7 @@ const existingNotes = fs.readFileSync(
 const parsedNotes = JSON.parse(existingNotes);
 
 // Set up the Express app and define the port
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Middleware to handle form data and JSON
@@ -114,6 +115,6 @@ app.delete("/api/notes/:id", (req, res) => {
 });
 
 // Start the server and listen on the defined port
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log(`Now listening on port ${PORT}!`));
 });
