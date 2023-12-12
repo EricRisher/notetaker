@@ -1,12 +1,27 @@
 [
   {
     "id": "f660115c-4ca3-40b8-b4d7-86bbe98e951d",
-    "title": "note 1",
-    "text": "test"
+    "title": "Note 1",
+    "text": "This is the first example note."
   },
   {
-    "id": "1ac43ca6-9db5-416e-8604-5b52410e2200",
-    "title": "sdfsa",
-    "text": "fdsafsa"
+    "id": "4f8a2e34-892f-45c3-9aa7-2b3d84f4c0bd",
+    "title": "Note 2",
+    "text": "A second example note with some content."
+  },
+  {
+    "id": "7d879f6c-4f0c-42c0-8bb3-6d7e2cf2ef6b",
+    "title": "Note 3",
+    "text": "The third example note has more details."
+  },
+  {
+    "id": "bdcb91d5-5a24-4d8a-ba3a-3a6b1e15e7d5",
+    "title": "Note 4",
+    "text": "Here's another note for testing purposes."
+  },
+  {
+    "id": "6c7a2652-8b3a-4b29-a150-49c3815f641c",
+    "title": "Note 5",
+    "text": "Fifth example note to complete the set."
   }
 ]
