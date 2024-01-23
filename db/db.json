@@ -23,5 +23,10 @@
     "id": "6c7a2652-8b3a-4b29-a150-49c3815f641c",
     "title": "Note 5",
     "text": "Fifth example note to complete the set."
+  },
+  {
+    "id": "0bbd66f9-111d-4f72-b262-0d67bad4bfbe",
+    "title": "Note 6",
+    "text": "Hello world!"
   }
 ]
